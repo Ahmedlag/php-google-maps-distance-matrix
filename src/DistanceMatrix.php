@@ -113,7 +113,19 @@ class DistanceMatrix
 
         return $this;
     }
-
+	
+    /**
+     * @param string $origin
+     * Will clear origins & destinations
+     * @return $this
+     */
+    public function clear()
+    {
+        $this->origins = [];
+		$this->destinations = [];
+        return $this;
+    }
+	
     /**
      * @param string $origin
      *
